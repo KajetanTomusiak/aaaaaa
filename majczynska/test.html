@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Instagram Follower Count</title>
+    <style>
+        #followerCount {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Live Instagram Follower Count: <span id="followerCount">Loading...</span></h1>
+
+    <script>
+        function fetchFollowerCount() {
+            var username = 'majczynskaa'; // Instagram username
+
+            fetch('https://www.tucktools.com/instagram-live-followers/api/?username=' + username)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.success) {
+                        // Update the follower count on the page
+                        document.getElementById('followerCount').textContent = data.count;
+                    } else {
+                        console.log('Failed to fetch follower count');
+                    }
+                })
+                .catch(error => {
+                    console.log('Error:', error);
+                });
+        }
+
+        // Fetch the follower count initially
+        fetchFollowerCount();
+
+        // Fetch the follower count every 10 seconds for real-time updates
+        setInterval(fetchFollowerCount, 10000);
+    </script>
+</body>
+</html>

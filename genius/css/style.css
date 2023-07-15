@@ -1,0 +1,236 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* font-family: 'Rubik', sans-serif; */
+    font-family: "Barlow", sans-serif;
+    line-height: 2;
+    scroll-behavior: smooth !important;
+}
+
+section#about {
+    padding-top: 4rem;
+}
+
+.active {
+    color: #000000eb !important;
+}
+
+.dropdown-item.active {
+    background-color: transparent;
+}
+
+.row {
+    width: 100% !important;
+}
+
+.bg-light {
+    background-color: hsl(0, 0%, 88%) !important;
+}
+
+.nav-item, .dropdown-menu {
+    width: 200px !important;
+
+}
+
+.navbar-brand:hover {
+    color:hsl(0, 0%, 50%) !important;
+}
+
+.navbar-toggler {
+    border: 1px solid rgba(0, 0, 0, 0.125)  !important;
+}
+
+.nav-link:hover {
+    color: #000000eb !important;
+}
+
+/* .dropdown-item {
+    text-align: center !important;
+} */
+
+.dropdown-item {
+    color: #656565;
+}
+
+.dropdown-item:hover {
+    color:#000000eb;
+}
+
+.container:first-child {
+    margin-top: 0px;
+    justify-content: flex-start;
+}
+
+.container:nth-child(2) {
+    margin-top: 50px;
+}
+
+.navbar {
+    text-align: center;
+}
+
+.dropdown {
+    transition: .5s ease-in-out;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0%;
+}
+
+.underline {
+    cursor: pointer;
+    height: 100px;
+}
+
+.underline::before {
+    bottom: -6px !important;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 900;
+}
+
+span#text {
+    color:#000000eb;    
+}
+
+#navbarNav {
+    border-bottom: 1px solid hsl(0, 0%, 67%);
+}
+
+.hvr-underline-from-center {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+  }
+  .hvr-underline-from-center:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 51%;
+    right: 51%;
+    bottom: 0px;
+    background: #000000eb;
+    height: 1px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+  }
+  .hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+    left: 0;
+    right: 0;
+  }
+
+
+
+.link-dark { 
+    transition: all .2s ease-in-out; 
+}
+
+.link-dark:hover { 
+    font-size: 1.125em;
+}
+
+.hidden {
+    opacity:0;
+}
+
+.console-container {
+    font-weight: 100;
+    font-size:4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color:white;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;    
+}
+
+.console-underscore {
+    display:inline-block;
+    width: 0px;
+    left:0px;
+}
+
+h1 {
+    font-size: 4em;
+    color: #000000eb;
+}
+
+
+.author {
+    font-size: 1.125rem;
+    color: hsl(0, 0%, 50%);
+}
+
+.titleverse {
+    font-size: 1.125rem;
+    margin-bottom: 0;
+}
+
+.lyrics {
+    font-size: 1.125rem;
+}
+
+.tooltip.fadeIn {
+    animation-duration: 0.5s; /* czas trwania animacji tooltip */
+  }
+
+.text-white.me-2, .text-black.me-2 {
+    text-decoration: none !important;
+}
+
+mark {
+    background-color: hsl(0, 0%, 83%);
+  }
+
+.iconalbum {
+    font-size: 1.75em;   
+}
+
+footer {
+    margin-top: 5rem !important;
+}
+
+.footersection {
+    background-color: #000000eb;
+}
+
+.text-center .p-3 {
+    color: #000000eb;
+    background-color: hsl(0, 0%, 88%);
+}
+
+.hvr-grow {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  
+
+  
